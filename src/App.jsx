@@ -8,7 +8,6 @@ const [word, setWord] = useState("");
 const [size, setSize] = useState(400); 
 const [bgColor, setBgColor] = useState("ffffff"); 
 const [qrCode, setQrCode] = useState(""); 
- 
 useEffect(() => { 
 	setQrCode 
 (`http://api.qrserver.com/v1/create-qr-code/?data=${word}!&size=${size}x${size}&bgcolor=${bgColor}`); 
